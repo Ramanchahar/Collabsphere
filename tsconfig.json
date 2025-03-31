@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "es2019",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      "@collabsphere/core": ["packages/core"],
+      "@collabsphere/core/*": ["packages/core/*"],
+      "@collabsphere/intake": ["packages/intake"],
+      "@collabsphere/intake/*": ["packages/intake/*"],
+      "@collabsphere/blackbox": ["packages/blackbox"],
+      "@collabsphere/blackbox/*": ["packages/blackbox/*"],
+      "@collabsphere/evaluation": ["packages/evaluation"],
+      "@collabsphere/evaluation/*": ["packages/evaluation/*"],
+      "@collabsphere/ui": ["packages/ui"],
+      "@collabsphere/ui/*": ["packages/ui/*"]
+    }
+  },
+  "exclude": ["node_modules"],
+  "include": ["**/*.ts", "**/*.tsx"]
+} 
