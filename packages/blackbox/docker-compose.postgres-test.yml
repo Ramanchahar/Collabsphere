@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  postgres-test:
+    image: ankane/pgvector:v0.5.1
+    ports:
+      - "5433:5432"
+    environment:
+      - POSTGRES_USER=test_user
+      - POSTGRES_PASSWORD=test_password
+      - POSTGRES_DB=collabsphere_test
+    volumes:
+      - postgres_test_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U test_user"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    restart: unless-stopped
+
+volumes:
+  postgres_test_data: 
