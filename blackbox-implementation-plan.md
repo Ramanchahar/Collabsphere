@@ -4,7 +4,6 @@
 
 The Black Box is the core brain of CollabSphere AI, implementing a revolutionary 5-level memory architecture with confidence/doubt assessment. It processes standardized input from the Intake Layer, organizes knowledge across memory levels, detects contradictions, and provides confidence-aware responses to queries.
 
-![Black Box Architecture](https://i.ibb.co/zQnydZS/collabsphere-ai-black-box.png)
 
 ## Key Subsystems
 
