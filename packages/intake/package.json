@@ -1,5 +1,17 @@
 {
   "name": "@collabsphere/intake",
   "version": "0.1.0",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "@notionhq/client": "^2.2.14",
+    "@prisma/client": "^5.10.0",
+    "next": "^14.1.0",
+    "next-auth": "^4.24.5",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.19",
+    "prisma": "^5.10.0",
+    "typescript": "^5.3.3"
+  }
 }
